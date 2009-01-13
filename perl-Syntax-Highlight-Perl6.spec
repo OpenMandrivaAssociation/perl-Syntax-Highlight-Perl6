@@ -23,6 +23,8 @@ BuildRequires: perl(YAML::Syck)
 
 BuildArch: noarch
 
+Provides: perl(STD)
+
 %description
 'Syntax::Highlight::Perl6' parses Perl 6 source code using an embedded
 STD.pm. It matches parse tree nodes to colors then returns them in
