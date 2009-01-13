@@ -18,6 +18,7 @@ BuildRequires: perl(Moose)
 BuildRequires: perl(Readonly)
 BuildRequires: perl(Term::ANSIColor)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(Test::Exception)
 BuildRequires: perl(YAML::Syck)
 
 BuildArch: noarch
