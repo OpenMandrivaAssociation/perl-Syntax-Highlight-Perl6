@@ -1,6 +1,6 @@
 
 %define realname   Syntax-Highlight-Perl6
-%define version    0.034
+%define version    0.035
 %define release    %mkrel 1
 
 Name:       perl-%{realname}
