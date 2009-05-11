@@ -62,5 +62,5 @@ rm -rf %buildroot
 %{_mandir}/man3/*
 %perl_vendorlib/*
 /usr/bin/hilitep6
-/usr/share/man/man1/hilitep6.1.lzma
+/usr/share/man/man1/*
 
