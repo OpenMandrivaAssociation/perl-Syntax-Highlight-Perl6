@@ -1,18 +1,16 @@
+%define upstream_name    Syntax-Highlight-Perl6
+%define upstream_version 0.58
 
-%define realname   Syntax-Highlight-Perl6
-%define version    0.57
-%define release    %mkrel 1
+Name:       perl-%{upstream_name}
+Version:    %{upstream_version}
+Release:    %mkrel 1
 
-Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
+License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Perl 6 Syntax Highlighter
-Source:     http://www.cpan.org/modules/by-module/Syntax/%{realname}-%{version}.tar.gz
-Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: perl-devel
+Source0:    http://www.cpan.org/modules/by-module/Syntax/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        http://search.cpan.org/dist/%{upstream_name}
+
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Moose)
 BuildRequires: perl(Readonly)
@@ -20,10 +18,9 @@ BuildRequires: perl(Term::ANSIColor)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(YAML::Syck)
-
-BuildArch: noarch
-
-Provides: perl(STD)
+BuildArch:  noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+Provides:   perl(STD)
 
 %description
 'Syntax::Highlight::Perl6' parses Perl 6 source code using an embedded
@@ -34,13 +31,8 @@ as a learning tool in examining STD.pm's output using the JavaScript node
 viewer in its full html mode. Or you can use its parse tree Perl 5 records
 to build your next great idea.
 
-The available output formats are:
-
-* *
-      HTML (snippet,simple and full)
-
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
