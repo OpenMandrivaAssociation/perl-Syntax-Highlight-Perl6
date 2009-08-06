@@ -1,5 +1,5 @@
 %define upstream_name    Syntax-Highlight-Perl6
-%define upstream_version 0.65
+%define upstream_version 0.67
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -55,4 +55,3 @@ rm -rf %buildroot
 %perl_vendorlib/*
 /usr/bin/hilitep6
 /usr/share/man/man1/*
-
