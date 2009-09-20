@@ -1,5 +1,5 @@
 %define upstream_name    Syntax-Highlight-Perl6
-%define upstream_version 0.74
+%define upstream_version 0.75
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
