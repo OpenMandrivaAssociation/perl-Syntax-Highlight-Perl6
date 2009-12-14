@@ -18,6 +18,8 @@ BuildRequires: perl(Term::ANSIColor)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(YAML::Syck)
+BuildRequires: perl(YAML::XS)
+
 BuildArch:  noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 Provides:   perl(STD)
