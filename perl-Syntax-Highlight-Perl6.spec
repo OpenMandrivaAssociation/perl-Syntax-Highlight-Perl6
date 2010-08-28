@@ -12,6 +12,7 @@ Source0:    http://www.cpan.org/modules/by-module/Syntax/%{upstream_name}-%{upst
 Url:        http://search.cpan.org/dist/%{upstream_name}
 
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(File::ShareDir)
 BuildRequires: perl(Moose)
 BuildRequires: perl(Readonly)
 BuildRequires: perl(Term::ANSIColor)
@@ -22,6 +23,7 @@ BuildRequires: perl(YAML::XS)
 
 BuildArch:  noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+
 Provides:   perl(STD)
 
 %description
@@ -41,7 +43,7 @@ to build your next great idea.
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf %buildroot
