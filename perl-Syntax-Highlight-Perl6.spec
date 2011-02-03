@@ -13,6 +13,7 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::ShareDir)
+BuildRequires: perl(File::ShareDir::Install)
 BuildRequires: perl(Moose)
 BuildRequires: perl(Readonly)
 BuildRequires: perl(Term::ANSIColor)
