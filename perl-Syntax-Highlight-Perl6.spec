@@ -16,16 +16,14 @@ BuildRequires: perl(File::ShareDir)
 BuildRequires: perl(File::ShareDir::Install)
 BuildRequires: perl(Moose)
 BuildRequires: perl(Readonly)
-BuildRequires: perl(STD)
+BuildRequires: perl-STD
 BuildRequires: perl(Term::ANSIColor)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(YAML::Syck)
 BuildRequires: perl(YAML::XS)
-
 BuildArch:  noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
-
 Provides:   perl(STD)
 
 %description
