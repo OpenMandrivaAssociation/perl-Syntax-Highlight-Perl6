@@ -9,7 +9,7 @@ License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Perl 6 Syntax Highlighter
 Source0:	http://www.cpan.org/modules/by-module/Syntax/%{upstream_name}-%{upstream_version}.tar.gz
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::MakeMaker)
