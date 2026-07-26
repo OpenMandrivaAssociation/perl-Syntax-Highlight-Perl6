@@ -1,14 +1,12 @@
 %define upstream_name    Syntax-Highlight-Perl6
-%define upstream_version 0.88
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.88
+Release:	7
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Perl 6 Syntax Highlighter
-Source0:	http://www.cpan.org/modules/by-module/Syntax/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Syntax/%{upstream_name}-%{version}.tar.gz
 Url:		https://metacpan.org/dist/Syntax-Highlight-Perl6
 
 BuildRequires:	make
@@ -37,7 +35,7 @@ viewer in its full html mode. Or you can use its parse tree Perl 5 records
 to build your next great idea.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -133,10 +131,8 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat May 30 2009 Jérôme Quelin <jquelin@mandriva.org> 0.580.0-1mdv2010.0
 + Revision: 381273
-- really use %%perl_convert_version
-- update to 0.58
-- using %%perl_convert_version
-- sanitized license tag
+- really use %0.88 update to 0.58
+- using %0.88 sanitized license tag
 - cleaned description field
 
 * Thu May 21 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.57-1mdv2010.0
